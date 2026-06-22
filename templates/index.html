@@ -142,11 +142,12 @@
 
     <div class="prediction-card">
 
-        <form>
+        <form method="POST">
 
             <label>Symptoms</label>
 
             <textarea
+                name="symptoms"
                 placeholder="Example: Fever, Cough, Headache"
                 rows="5"></textarea>
 
@@ -160,7 +161,7 @@
 
             <h3>Prediction Result</h3>
 
-            <p>No prediction yet.</p>
+            <p>{{ prediction }}</p>
 
         </div>
 
