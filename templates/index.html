@@ -2,10 +2,50 @@
 <html>
 <head>
     <title>Hospital AI Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 
-<h1>AI Hospital Dashboard</h1>
+<div class="sidebar">
+    <h2>🏥 Hospital AI</h2>
+    <ul>
+        <li>Dashboard</li>
+        <li>Patients</li>
+        <li>Doctors</li>
+        <li>Reports</li>
+        <li>Settings</li>
+    </ul>
+</div>
+
+<div class="main-content">
+
+    <h1>Hospital Dashboard</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Patients</h3>
+            <p>1,250</p>
+        </div>
+
+        <div class="card">
+            <h3>Doctors</h3>
+            <p>85</p>
+        </div>
+
+        <div class="card">
+            <h3>Appointments</h3>
+            <p>320</p>
+        </div>
+
+        <div class="card">
+            <h3>Emergency Cases</h3>
+            <p>15</p>
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
