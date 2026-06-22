@@ -183,3 +183,49 @@ body{
     border:2px dashed #64748b;
     color:#cbd5e1;
 }
+.dark-mode .prediction-card{
+    background:#1e293b;
+    color:white;
+}
+.dark-mode .result-box{
+    background:#334155;
+}
+
+.dark-mode textarea{
+    background:#334155;
+    color:white;
+}
+.prediction-section{
+    margin-top:40px;
+}
+
+.prediction-card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.prediction-card textarea{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border-radius:8px;
+}
+
+.predict-btn{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+}
+
+.result-box{
+    margin-top:25px;
+    padding:15px;
+    background:#f1f5f9;
+    border-radius:8px;
+}
