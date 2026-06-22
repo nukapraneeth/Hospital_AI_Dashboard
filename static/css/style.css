@@ -89,3 +89,39 @@ body{
     border-radius:5px;
     cursor:pointer;
 }
+.overview-section{
+    margin-top:40px;
+}
+
+.overview-section h2{
+    margin-bottom:20px;
+}
+
+.overview-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.overview-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.overview-box:hover{
+    transform:translateY(-5px);
+}
+
+.overview-box h3{
+    margin:0;
+    font-size:16px;
+}
+
+.overview-box p{
+    font-size:28px;
+    font-weight:bold;
+    margin-top:10px;
+}
