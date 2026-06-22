@@ -30,7 +30,7 @@
         <div class="top-actions">
             <input type="text" placeholder="Search Patients...">
 
-            <button class="theme-btn">
+            <button class="theme-btn" onclick="toggleTheme()">
                 🌙 Dark Mode
             </button>
         </div>
@@ -138,6 +138,20 @@
 
     
 </div>
+
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+
+    let btn = document.querySelector(".theme-btn");
+
+    if(document.body.classList.contains("dark-mode")){
+        btn.innerHTML = "☀️ Light Mode";
+    }else{
+        btn.innerHTML = "🌙 Dark Mode";
+    }
+}
+</script>
 
 </body>
 </html>

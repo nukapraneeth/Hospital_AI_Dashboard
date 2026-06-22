@@ -156,3 +156,30 @@ body{
     font-size:18px;
     color:#64748b;
 }
+body{
+    transition:0.4s;
+}
+
+.dark-mode{
+    background:#0f172a;
+    color:white;
+}
+
+.dark-mode .card,
+.dark-mode .overview-box,
+.dark-mode .chart-box,
+.dark-mode .topbar{
+    background:#1e293b;
+    color:white;
+}
+
+.dark-mode input{
+    background:#334155;
+    color:white;
+    border:none;
+}
+
+.dark-mode .chart-placeholder{
+    border:2px dashed #64748b;
+    color:#cbd5e1;
+}
