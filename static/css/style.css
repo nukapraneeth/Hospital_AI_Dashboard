@@ -1,0 +1,91 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#1e293b;
+    color:white;
+    position:fixed;
+    padding:20px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    padding:15px 10px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.sidebar li:hover{
+    background:#334155;
+    transform:translateX(5px);
+}
+
+.main-content{
+    margin-left:270px;
+    padding:30px;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:220px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin:0;
+}
+
+.card p{
+    font-size:28px;
+    font-weight:bold;
+}
+.topbar{
+    background:white;
+    padding:15px 25px;
+    border-radius:10px;
+    margin-bottom:25px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.top-actions{
+    display:flex;
+    gap:10px;
+}
+
+.top-actions input{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.theme-btn{
+    background:#1e293b;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
