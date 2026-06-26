@@ -195,6 +195,23 @@ body{
     background:#334155;
     color:white;
 }
+.dark-mode .patient-table{
+    background:#1e293b;
+    color:white;
+}
+
+.dark-mode .patient-table th{
+    background:#0f172a;
+}
+
+.dark-mode .patient-table td{
+    border-bottom:1px solid #475569;
+}
+
+.dark-mode .patient-table tr:hover{
+    background:#334155;
+}
+
 .prediction-section{
     margin-top:40px;
 }
@@ -228,4 +245,36 @@ body{
     padding:15px;
     background:#f1f5f9;
     border-radius:8px;
+}
+/* ===========================
+   Recent Patients Table
+=========================== */
+
+.patients-section{
+    margin-top:40px;
+}
+
+.patient-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.patient-table th{
+    background:#1e293b;
+    color:white;
+    padding:15px;
+    text-align:left;
+}
+
+.patient-table td{
+    padding:15px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.patient-table tr:hover{
+    background:#f8fafc;
 }
