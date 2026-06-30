@@ -39,6 +39,20 @@
 
 <div class="main-content">
 
+    <div class="topbar">
+
+    <h2>Hospital Management System</h2>
+
+    <div class="top-actions">
+
+        <button class="theme-btn" onclick="toggleTheme()">
+            🌙 Dark Mode
+        </button>
+
+    </div>
+
+    </div>
+
 {% block content %}
 
 {% endblock %}
@@ -46,4 +60,48 @@
 </div>
 
 </body>
+
+<script>
+
+function toggleTheme() {
+
+    document.body.classList.toggle("dark-mode");
+
+    let btn = document.querySelector(".theme-btn");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        btn.innerHTML = "☀️ Light Mode";
+
+        localStorage.setItem("theme","dark");
+
+    }else{
+
+        btn.innerHTML = "🌙 Dark Mode";
+
+        localStorage.setItem("theme","light");
+
+    }
+
+}
+
+window.onload = function(){
+
+    let theme = localStorage.getItem("theme");
+
+    let btn = document.querySelector(".theme-btn");
+
+    if(theme === "dark"){
+
+        document.body.classList.add("dark-mode");
+
+        if(btn){
+            btn.innerHTML="☀️ Light Mode";
+        }
+
+    }
+
+}
+
+</script>
 </html>
