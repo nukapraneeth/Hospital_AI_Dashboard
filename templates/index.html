@@ -28,7 +28,19 @@
         <h2>Hospital Management System</h2>
 
         <div class="top-actions">
-            <input type="text" placeholder="Search Patients...">
+            <form method="GET" class="search-form">
+
+                <input
+                    type="text"
+                    name="search"
+                    placeholder="Search Patients..."
+                    value="{{ search_query }}">
+
+                <button type="submit">
+                    Search
+                </button>
+
+            </form>
 
             <button class="theme-btn" onclick="toggleTheme()">
                 🌙 Dark Mode

@@ -35,6 +35,15 @@ def home():
         "status": "Critical"
     }
     ]
+    search_query = request.args.get("search", "").lower()
+
+    if search_query:
+        patients = [
+            patient for patient in patients
+            if search_query in patient["name"].lower()
+            or search_query in patient["disease"].lower()
+            or search_query in patient["status"].lower()
+        ]
 
     if request.method == "POST":
 
@@ -55,8 +64,9 @@ def home():
     return render_template(
         "index.html",
         prediction=prediction,
-        patients=patients    
-        )
+        patients=patients,
+        search_query=search_query
+    )
 
 if __name__ == "__main__":
     app.run(debug=True)
