@@ -9,9 +9,13 @@
 <div class="sidebar">
     <h2>🏥 Hospital AI</h2>
 <ul>
-    <li>🏠 Dashboard</li>
+    <li>
+        <a href="/">🏠 Dashboard</a>
+    </li>
     <li>📊 Data Overview</li>
-    <li>👥 Patients</li>
+    <li>
+        <a href="/patients">👥 Patients</a>
+    </li>
     <li>👨‍⚕️ Doctors</li>
     <li>📅 Appointments</li>
     <li>🚑 Emergency Cases</li>
@@ -83,6 +87,54 @@
             <p>$5,200</p>
         </div>
     </div>
+
+    <div class="patients-section">
+
+    <h2>📋 Recent Patients</h2>
+
+    <table class="patient-table">
+
+        <tr>
+            <th>ID</th>
+            <th>Patient Name</th>
+            <th>Age</th>
+            <th>Disease</th>
+            <th>Doctor</th>
+            <th>Status</th>
+        </tr>
+
+        {% for patient in patients %}
+        <tr>
+            <td>{{ patient.id }}</td>
+            <td>{{ patient.name }}</td>
+            <td>{{ patient.age }}</td>
+            <td>{{ patient.disease }}</td>
+            <td>{{ patient.doctor }}</td>
+            <td>{% if patient.status == "Admitted" %}
+            <span class="status admitted">
+                {{ patient.status }}
+            </span>
+                {% elif patient.status == "Stable" %}
+            <span class="status stable">
+                {{ patient.status }}
+            </span>
+                {% elif patient.status == "Critical" %}
+            <span class="status critical">
+                {{ patient.status }}
+            </span>
+                {% else %}
+            <span class="status">
+                {{ patient.status }}
+            </span>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    </div>
+
 
     <div class="overview-section">
 
@@ -178,53 +230,6 @@
         </div>
 
     </div>
-
-    </div>
-
-    <div class="patients-section">
-
-    <h2>📋 Recent Patients</h2>
-
-    <table class="patient-table">
-
-        <tr>
-            <th>ID</th>
-            <th>Patient Name</th>
-            <th>Age</th>
-            <th>Disease</th>
-            <th>Doctor</th>
-            <th>Status</th>
-        </tr>
-
-        {% for patient in patients %}
-        <tr>
-            <td>{{ patient.id }}</td>
-            <td>{{ patient.name }}</td>
-            <td>{{ patient.age }}</td>
-            <td>{{ patient.disease }}</td>
-            <td>{{ patient.doctor }}</td>
-            <td>{% if patient.status == "Admitted" %}
-            <span class="status admitted">
-                {{ patient.status }}
-            </span>
-                {% elif patient.status == "Stable" %}
-            <span class="status stable">
-                {{ patient.status }}
-            </span>
-                {% elif patient.status == "Critical" %}
-            <span class="status critical">
-                {{ patient.status }}
-            </span>
-                {% else %}
-            <span class="status">
-                {{ patient.status }}
-            </span>
-                {% endif %}
-            </td>
-        </tr>
-        {% endfor %}
-
-    </table>
 
     </div>
 

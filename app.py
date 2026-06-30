@@ -68,5 +68,10 @@ def home():
         search_query=search_query
     )
 
+@app.route("/patients")
+def patients():
+
+    return render_template("patients.html")
+
 if __name__ == "__main__":
-    app.run(debug=True)
+        app.run(debug=True)

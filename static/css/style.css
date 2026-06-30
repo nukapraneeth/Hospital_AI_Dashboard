@@ -356,3 +356,13 @@ body{
 .search-form button:hover{
     background:#1d4ed8;
 }
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    display:block;
+}
+
+.sidebar a:hover{
+    color:#38bdf8;
+}
