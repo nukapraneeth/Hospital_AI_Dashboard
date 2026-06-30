@@ -258,6 +258,25 @@ body{
 
 }
 
+.dark-mode .form-card{
+
+    background:#1e293b;
+
+    color:white;
+
+}
+
+.dark-mode .form-card input,
+.dark-mode .form-card select{
+
+    background:#334155;
+
+    color:white;
+
+    border:none;
+
+}
+
 .prediction-section{
     margin-top:40px;
 }
@@ -501,3 +520,59 @@ body{
 
 }
 
+.form-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+
+    max-width:600px;
+
+}
+
+.form-card label{
+
+    display:block;
+
+    margin-top:20px;
+
+    font-weight:bold;
+
+}
+
+.form-card input,
+.form-card select{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:8px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+}
+
+.save-btn{
+
+    margin-top:25px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}

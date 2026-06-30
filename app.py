@@ -52,5 +52,10 @@ def patients_page():
         patients=patients
     )
 
+@app.route("/add_patient")
+def add_patient():
+
+    return render_template("add_patient.html")
+
 if __name__ == "__main__":
         app.run(debug=True)

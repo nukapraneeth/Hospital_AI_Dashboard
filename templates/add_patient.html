@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}
+Add Patient
+{% endblock %}
+
+{% block content %}
+
+<h1>➕ Add New Patient</h1>
+
+<div class="form-card">
+
+<form>
+
+<label>Patient Name</label>
+
+<input type="text" placeholder="Enter Patient Name">
+
+<label>Age</label>
+
+<input type="number" placeholder="Enter Age">
+
+<label>Disease</label>
+
+<input type="text" placeholder="Disease">
+
+<label>Doctor</label>
+
+<input type="text" placeholder="Doctor Name">
+
+<label>Status</label>
+
+<select>
+
+    <option>Admitted</option>
+
+    <option>Stable</option>
+
+    <option>Critical</option>
+
+</select>
+
+<button class="save-btn">
+    Save Patient
+</button>
+
+</form>
+
+</div>
+
+{% endblock %}
