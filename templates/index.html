@@ -191,7 +191,24 @@
             <td>{{ patient.age }}</td>
             <td>{{ patient.disease }}</td>
             <td>{{ patient.doctor }}</td>
-            <td>{{ patient.status }}</td>
+            <td>{% if patient.status == "Admitted" %}
+            <span class="status admitted">
+                {{ patient.status }}
+            </span>
+                {% elif patient.status == "Stable" %}
+            <span class="status stable">
+                {{ patient.status }}
+            </span>
+                {% elif patient.status == "Critical" %}
+            <span class="status critical">
+                {{ patient.status }}
+            </span>
+                {% else %}
+            <span class="status">
+                {{ patient.status }}
+            </span>
+                {% endif %}
+            </td>
         </tr>
         {% endfor %}
 

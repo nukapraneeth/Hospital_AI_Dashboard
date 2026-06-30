@@ -211,6 +211,20 @@ body{
 .dark-mode .patient-table tr:hover{
     background:#334155;
 }
+.dark-mode .admitted{
+    background:#1e40af;
+    color:white;
+}
+
+.dark-mode .stable{
+    background:#166534;
+    color:white;
+}
+
+.dark-mode .critical{
+    background:#991b1b;
+    color:white;
+}
 
 .prediction-section{
     margin-top:40px;
@@ -277,4 +291,30 @@ body{
 
 .patient-table tr:hover{
     background:#f8fafc;
+}
+/* ===========================
+   Status Badges
+=========================== */
+
+.status{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.admitted{
+    background:#dbeafe;
+    color:#1d4ed8;
+}
+
+.stable{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.critical{
+    background:#fee2e2;
+    color:#dc2626;
 }
