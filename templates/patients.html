@@ -8,8 +8,42 @@ All Patients
 
 <h1>👥 All Patients</h1>
 
-<p>
-    This page will contain every patient in the hospital.
-</p>
+<table class="patient-table">
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Disease</th>
+        <th>Doctor</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+
+    {% for patient in patients %}
+
+    <tr>
+
+        <td>{{ patient.id }}</td>
+
+        <td>{{ patient.name }}</td>
+
+        <td>{{ patient.age }}</td>
+
+        <td>{{ patient.disease }}</td>
+
+        <td>{{ patient.doctor }}</td>
+
+        <td>{{ patient.status }}</td>
+
+        <td>
+            <button>Edit</button>
+        </td>
+
+    </tr>
+
+    {% endfor %}
+
+</table>
 
 {% endblock %}

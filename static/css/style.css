@@ -235,6 +235,19 @@ body{
     background:#2563eb;
 }
 
+.dark-mode .patient-table{
+    background:#1e293b;
+    color:white;
+}
+
+.dark-mode .patient-table td{
+    border-color:#334155;
+}
+
+.dark-mode .patient-table tr:hover{
+    background:#334155;
+}
+
 .prediction-section{
     margin-top:40px;
 }
@@ -365,4 +378,39 @@ body{
 
 .sidebar a:hover{
     color:#38bdf8;
+}
+
+.patient-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    margin-top:20px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.patient-table th{
+    background:#2563eb;
+    color:white;
+    padding:15px;
+    text-align:left;
+}
+
+.patient-table td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+.patient-table tr:hover{
+    background:#f8fafc;
+}
+
+.patient-table button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
 }
