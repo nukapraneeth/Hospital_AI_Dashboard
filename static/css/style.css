@@ -248,6 +248,16 @@ body{
     background:#334155;
 }
 
+.dark-mode .patient-search input{
+
+    background:#334155;
+
+    color:white;
+
+    border:none;
+
+}
+
 .prediction-section{
     margin-top:40px;
 }
@@ -414,3 +424,80 @@ body{
     border-radius:5px;
     cursor:pointer;
 }
+
+.patient-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.add-btn{
+
+    background:#22c55e;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:0.3s;
+
+}
+
+.add-btn:hover{
+
+    background:#16a34a;
+
+}
+
+.patient-search{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+}
+
+.patient-search input{
+
+    flex:1;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+}
+
+.patient-search button{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
