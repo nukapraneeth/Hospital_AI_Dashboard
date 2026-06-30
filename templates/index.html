@@ -1,32 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hospital AI Dashboard</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-<body>
+{% extends "base.html" %}
 
-<div class="sidebar">
-    <h2>🏥 Hospital AI</h2>
-<ul>
-    <li>
-        <a href="/">🏠 Dashboard</a>
-    </li>
-    <li>📊 Data Overview</li>
-    <li>
-        <a href="/patients">👥 Patients</a>
-    </li>
-    <li>👨‍⚕️ Doctors</li>
-    <li>📅 Appointments</li>
-    <li>🚑 Emergency Cases</li>
-    <li>📈 Analytics</li>
-    <li>🤖 AI Prediction</li>
-    <li>📄 Reports</li>
-    <li>⚙️ Settings</li>
-</ul>
-</div>
+{% block title %}
+Dashboard
+{% endblock %}
 
-<div class="main-content">
+{% block content %}
 
     <div class="topbar">
         <h2>Hospital Management System</h2>
@@ -233,7 +211,7 @@
 
     </div>
 
-</div>
+
 
 <script>
 function toggleTheme() {
@@ -249,5 +227,4 @@ function toggleTheme() {
 }
 </script>
 
-</body>
-</html>
+{% endblock %}
