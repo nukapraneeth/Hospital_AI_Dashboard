@@ -10,27 +10,43 @@ Add Patient
 
 <div class="form-card">
 
-<form>
+<form method="post">
 
 <label>Patient Name</label>
 
-<input type="text" placeholder="Enter Patient Name">
+<input
+    type="text"
+    name="name"
+    placeholder="Enter Patient Name"
+    required>
 
 <label>Age</label>
 
-<input type="number" placeholder="Enter Age">
+<input
+    type="number"
+    name="age"
+    placeholder="Enter Age"
+    required>
 
 <label>Disease</label>
 
-<input type="text" placeholder="Disease">
+<input
+    type="text"
+    name="disease"
+    placeholder="Enter Disease"
+    required>
 
 <label>Doctor</label>
 
-<input type="text" placeholder="Doctor Name">
+<input
+    type="text"
+    name="doctor"
+    placeholder="Doctor Name"
+    required>
 
 <label>Status</label>
 
-<select>
+<select name="status">
 
     <option>Admitted</option>
 

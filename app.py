@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 
 from data.patients import patients
 
@@ -52,8 +52,29 @@ def patients_page():
         patients=patients
     )
 
-@app.route("/add_patient")
+@app.route("/add_patient", methods=["GET", "POST"])
 def add_patient():
+
+    if request.method == "POST":
+
+        name = request.form["name"]
+        age = request.form["age"]
+        disease = request.form["disease"]
+        doctor = request.form["doctor"]
+        status = request.form["status"]
+
+        new_patient = {
+            "id": str(len(patients) + 1).zfill(3),
+            "name": name,
+            "age": age,
+            "disease": disease,
+            "doctor": doctor,
+            "status": status
+        }
+
+        patients.append(new_patient)
+
+        return redirect(url_for("patients_page"))
 
     return render_template("add_patient.html")
 
